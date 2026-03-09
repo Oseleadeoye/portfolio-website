@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Thyra Predict – Thyroid Disease Prediction System",
+    "description": "Developed and deployed a supervised ML model achieving 98.37% accuracy across 1,500+ clinical test cases. Engineered an end-to-end pipeline including preprocessing, feature engineering, model training, and evaluation. Optimized precision and recall across multi-class disease prediction, ensuring reliable diagnostic classification performance.",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn"
+    ],
+    "image": "/projects/Thyroid Health .png",
+    "link": "https://thyrapredict-thyroid-prediction.onrender.com/",
+    "github": null
+  },
+  {
+    "title": "Music Recommendation App",
+    "description": "A content-based music recommendation system built with Python and Streamlit. The app suggests songs similar to a selected track by analyzing lyrical content using NLP techniques like TF-IDF Vectorization and Cosine Similarity.",
+    "skills": [
+      "Python",
+      "Streamlit",
+      "Scikit-learn",
+      "NLTK",
+      "Pandas"
+    ],
+    "image": "/projects/Music reccomender .png",
+    "link": "https://my-music-app-qdgs4tvbx6qcgrdgqxqjpi.streamlit.app/",
+    "github": "https://github.com/Oseleadeoye/my-music-app"
+  }
+]
