@@ -45,11 +45,11 @@ export function Hero() {
         </div>
       </div>
       <div className="flex items-center gap-4 py-4">
-        <a href="https://github.com/charles-55" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Oseleadeoye" target="_blank" rel="noopener noreferrer">
           <Github className="h-7 w-7" />
           <span className="sr-only">GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/osamudiamen-nwoko/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/oseleadeoye/" target="_blank" rel="noopener noreferrer">
           <Linkedin className="h-7 w-7" />
           <span className="sr-only">LinkedIn</span>
         </a>

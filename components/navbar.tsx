@@ -46,11 +46,11 @@ export function Navbar() {
             Contact
           </button>
           <div className="flex items-center gap-4">
-            <a href="https://github.com/charles-55" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Oseleadeoye" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/osamudiamen-nwoko/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/oseleadeoye/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -101,11 +101,11 @@ export function Navbar() {
                 Contact
               </button>
               <div className="mt-4 flex items-center gap-6">
-                <a href="https://github.com/charles-55" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Oseleadeoye" target="_blank" rel="noopener noreferrer">
                   <Github className="h-6 w-6" />
                   <span className="sr-only">GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/osamudiamen-nwoko/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/oseleadeoye/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-6 w-6" />
                   <span className="sr-only">LinkedIn</span>
                 </a>
