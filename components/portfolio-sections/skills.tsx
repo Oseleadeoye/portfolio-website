@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SiAmazon, SiC, SiGithub, SiJavascript, SiMysql, SiPython, SiReact, SiNextdotjs, SiPostgresql, SiR, SiTableau, SiGoogleanalytics } from "react-icons/si";
+import { SiC, SiGithub, SiJavascript, SiMysql, SiPython, SiReact, SiNextdotjs, SiR, SiTableau, SiGoogleanalytics, SiAmazonwebservices } from "react-icons/si";
 import { FaJava, FaBrain, FaEye, FaLanguage } from "react-icons/fa";
 import { BiTable } from "react-icons/bi";
 
@@ -19,7 +19,7 @@ const technologies = [
   { name: "Tableau", icon: <SiTableau className="w-10 h-10 text-blue-800" /> },
   { name: "Excel", icon: <BiTable className="w-10 h-10 text-green-600" /> },
   { name: "Git / GitHub", icon: <SiGithub className="w-10 h-10 text-black dark:text-white" /> },
-  { name: "AWS", icon: <SiAmazon className="w-10 h-10 text-[#FF9900]" /> },
+  { name: "AWS", icon: <SiAmazonwebservices className="w-10 h-10 text-[#FF9900]" /> },
   { name: "React", icon: <SiReact className="w-10 h-10 text-blue-500" /> },
   { name: "Next.js", icon: <SiNextdotjs className="w-10 h-10 text-black dark:text-white" /> }
 ];
