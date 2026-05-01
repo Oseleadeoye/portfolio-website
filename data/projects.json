@@ -1,5 +1,32 @@
 [
   {
+    "title": "ResumeMatch AI",
+    "description": "Developed a full-stack AI platform that matches resumes to over 100,000 real-world job postings. Built using FastAPI and Next.js, the system employs a multi-signal NLP pipeline (spaCy, Word2Vec, SBERT) to analyze semantic alignment, extract specialized skills, and validate years-of-experience against job requirements. Optimized for production with Docker and deployed as a scalable microservice architecture.",
+    "skills": [
+      "FastAPI",
+      "Python",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "spaCy",
+      "NLTK",
+      "Word2Vec",
+      "Scikit-Learn",
+      "Docker",
+      "Hugging Face",
+      "Vercel"
+    ],
+    "achievements": [
+      "Custom NLP Pipeline: Built a line-by-line heuristic classifier to segment unstructured job descriptions into responsibilities and requirements.",
+      "Semantic Expansion: Implemented a Word2Vec model trained on 88k+ job posts to bridge the terminology gap between candidates and recruiters.",
+      "Production Engineering: Reduced database footprint by 95% (378MB to 13MB) for free-tier deployment without sacrificing search accuracy.",
+      "Table-Aware Parsing: Integrated specialized DOCX parsing to accurately extract text from complex resume templates."
+    ],
+    "image": "/projects/Resume Matcher .jpg",
+    "link": "https://nlp-resume-matcher-eta.vercel.app/",
+    "github": "https://github.com/Oseleadeoye/nlp-resume-matcher"
+  },
+  {
     "title": "Thyra Predict – Thyroid Disease Prediction System",
     "description": "Developed and deployed a supervised ML model achieving 98.37% accuracy across 1,500+ clinical test cases. Engineered an end-to-end pipeline including preprocessing, feature engineering, model training, and evaluation. Optimized precision and recall across multi-class disease prediction, ensuring reliable diagnostic classification performance.",
     "skills": [
@@ -9,7 +36,7 @@
     ],
     "image": "/projects/Thyroid Health .png",
     "link": "https://thyrapredict-thyroid-prediction.onrender.com/",
-    "github": null
+    "github": "https://github.com/Oseleadeoye/thyrapredict-thyroid-prediction"
   },
   {
     "title": "Music Recommendation App",
@@ -25,4 +52,4 @@
     "link": "https://my-music-app-qdgs4tvbx6qcgrdgqxqjpi.streamlit.app/",
     "github": "https://github.com/Oseleadeoye/my-music-app"
   }
-]
+]
