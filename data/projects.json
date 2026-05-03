@@ -1,5 +1,55 @@
 [
   {
+    "title": "AI Health Check – AI Operations & Governance Platform",
+    "description": "A comprehensive full-stack AI Operations platform unifying service health monitoring, LLM-powered incident triage, model drift detection, and compliance reporting. Architected with a multi-layer safety pipeline and Human-in-the-Loop governance, it ensures secure, cost-effective, and auditable enterprise AI orchestration.",
+    "skills": [
+      "React 18",
+      "FastAPI",
+      "Python",
+      "SQLite",
+      "Anthropic SDK",
+      "SHA-256 Hashing",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "achievements": [
+      "Human-in-the-Loop Governance: Architected a two-tier Claude Sonnet/Haiku pipeline where AI-drafted reports require human sign-off before being finalized.",
+      "Immutable Audit Logging: Implemented a SHA-256 hash-chain audit log to record every system action, ensuring tamper-proof compliance tracking.",
+      "Safety & Security Pipeline: Developed a multi-layer defense system including PII detection, injection prevention, and SSRF-protected service registration.",
+      "Atomic Budget Enforcement: Built a concurrency-safe 'lock-and-reserve' system for $5/day budget management, eliminating race conditions in LLM calls."
+    ],
+    "image": "/projects/AI Health Check.png",
+    "link": null,
+    "github": "https://github.com/Oseleadeoye/ai_health_check"
+  },
+  {
+    "title": "SonicClusters — Music Clustering & Recommendation System",
+    "description": "An interactive web application demonstrating unsupervised music clustering and content-based recommendation. Powered by a 12,000-song dataset combining the Million Song Dataset with modern Spotify tracks, it features automated musical mood labeling, UMAP-based spatial grouping, and real-time similarity search.",
+    "skills": [
+      "React 18",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "scikit-learn",
+      "UMAP",
+      "Pandas",
+      "NumPy",
+      "Spotify Web API",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Recharts"
+    ],
+    "achievements": [
+      "Musical Mood Labeling: Developed an automated system to name clusters based on audio profiles (e.g., 'Intense Upbeat Pop', 'Mellow Slow Jazz') using multi-feature analysis.",
+      "UMAP Visualization: Implemented high-performance 2D/3D scatter plots for mathematically accurate spatial grouping of 12,000 songs.",
+      "Real-Time Inference: Built a FastAPI backend that calculates Euclidean distances on-the-fly to provide instant song recommendations within clusters.",
+      "Spotify Integration: Leveraged Spotify's Web API to enrich the dataset with real album artwork, audio previews, and metadata."
+    ],
+    "image": "/projects/Sonic Clusters .jpg",
+    "link": "https://sonic-clusters.vercel.app/",
+    "github": "https://github.com/Oseleadeoye/sonic-clusters-"
+  },
+  {
     "title": "ResumeMatch AI",
     "description": "Developed a full-stack AI platform that matches resumes to over 100,000 real-world job postings. Built using FastAPI and Next.js, the system employs a multi-signal NLP pipeline (spaCy, Word2Vec, SBERT) to analyze semantic alignment, extract specialized skills, and validate years-of-experience against job requirements. Optimized for production with Docker and deployed as a scalable microservice architecture.",
     "skills": [

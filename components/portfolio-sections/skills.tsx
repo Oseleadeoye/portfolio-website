@@ -3,10 +3,11 @@
 import { motion } from "framer-motion";
 import { SiC, SiGithub, SiJavascript, SiMysql, SiPython, SiReact, SiNextdotjs, SiR, SiTableau, SiGoogleanalytics, SiAmazonwebservices } from "react-icons/si";
 import { FaJava, FaBrain, FaEye, FaLanguage } from "react-icons/fa";
-import { BiTable } from "react-icons/bi";
+import { BiTable, BiScan } from "react-icons/bi";
 
 const technologies = [
   { name: "Python", icon: <SiPython className="w-10 h-10 text-yellow-500" /> },
+  { name: "YOLO", icon: <BiScan className="w-10 h-10 text-blue-400" /> },
   { name: "SQL", icon: <SiMysql className="w-10 h-10 text-blue-700" /> },
   { name: "R", icon: <SiR className="w-10 h-10 text-blue-500" /> },
   { name: "Java", icon: <FaJava className="w-10 h-10 text-red-500" /> },
