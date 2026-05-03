@@ -1,9 +1,7 @@
 [
   {
-    "slug": "ai-health-check",
     "title": "AI Health Check – AI Operations & Governance Platform",
-    "description": "A comprehensive full-stack AI Operations platform unifying service health monitoring, LLM-powered incident triage, model drift detection, and compliance reporting.",
-    "longDescription": "Built a production-grade AI Operations platform designed to monitor and govern large-scale LLM deployments. The system provides deep visibility into service health, model drift, and cost management, while maintaining strict compliance through a human-in-the-loop governance pipeline and immutable audit logs.",
+    "description": "A comprehensive full-stack AI Operations platform unifying service health monitoring, LLM-powered incident triage, model drift detection, and compliance reporting. Architected with a multi-layer safety pipeline and Human-in-the-Loop governance, it ensures secure, cost-effective, and auditable enterprise AI orchestration.",
     "skills": [
       "React 18",
       "FastAPI",
@@ -20,29 +18,13 @@
       "Safety & Security Pipeline: Developed a multi-layer defense system including PII detection, injection prevention, and SSRF-protected service registration.",
       "Atomic Budget Enforcement: Built a concurrency-safe 'lock-and-reserve' system for $5/day budget management, eliminating race conditions in LLM calls."
     ],
-    "features": [
-      "Real-time Service Health & Latency Monitoring",
-      "LLM-Powered Incident Triage & Automated Summaries",
-      "Model Drift Detection with Quality Threshold Alerts",
-      "Role-Based Access Control (RBAC) for Enterprise Governance",
-      "Tamper-proof Audit Trails using SHA-256 Hashing",
-      "Dynamic Service Registry for Model Agnostic Orchestration"
-    ],
     "image": "/projects/AI Health Check.png",
-    "gallery": [
-      { "url": "/projects/gallery/ai-health-check/dashboard.png", "title": "Main Dashboard - Health Overview" },
-      { "url": "/projects/gallery/ai-health-check/governance.png", "title": "Governance & Audit Logs" },
-      { "url": "/projects/gallery/ai-health-check/evaluations.png", "title": "Evaluations & Drift Detection" },
-      { "url": "/projects/gallery/ai-health-check/registry.png", "title": "Service & Model Registry" },
-      { "url": "/projects/gallery/ai-health-check/incidents.png", "title": "Incident Management" }
-    ],
     "link": null,
     "github": "https://github.com/Oseleadeoye/ai_health_check"
   },
   {
-    "slug": "sonic-clusters",
     "title": "SonicClusters — Music Clustering & Recommendation System",
-    "description": "An interactive web application demonstrating unsupervised music clustering and content-based recommendation using UMAP and Spotify metadata.",
+    "description": "An interactive web application demonstrating unsupervised music clustering and content-based recommendation. Powered by a 12,000-song dataset combining the Million Song Dataset with modern Spotify tracks, it features automated musical mood labeling, UMAP-based spatial grouping, and real-time similarity search.",
     "skills": [
       "React 18",
       "TypeScript",
@@ -50,44 +32,53 @@
       "Python",
       "scikit-learn",
       "UMAP",
+      "Pandas",
+      "NumPy",
       "Spotify Web API",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Framer Motion",
+      "Recharts"
     ],
     "achievements": [
-      "Musical Mood Labeling: Developed an automated system to name clusters based on audio profiles using multi-feature analysis.",
-      "UMAP Visualization: Implemented high-performance 2D/3D scatter plots for spatial grouping of 12,000 songs.",
-      "Real-Time Inference: Built a FastAPI backend that calculates Euclidean distances on-the-fly for recommendations."
+      "Musical Mood Labeling: Developed an automated system to name clusters based on audio profiles (e.g., 'Intense Upbeat Pop', 'Mellow Slow Jazz') using multi-feature analysis.",
+      "UMAP Visualization: Implemented high-performance 2D/3D scatter plots for mathematically accurate spatial grouping of 12,000 songs.",
+      "Real-Time Inference: Built a FastAPI backend that calculates Euclidean distances on-the-fly to provide instant song recommendations within clusters.",
+      "Spotify Integration: Leveraged Spotify's Web API to enrich the dataset with real album artwork, audio previews, and metadata."
     ],
     "image": "/projects/Sonic Clusters .jpg",
     "link": "https://sonic-clusters.vercel.app/",
     "github": "https://github.com/Oseleadeoye/sonic-clusters-"
   },
   {
-    "slug": "resume-match-ai",
     "title": "ResumeMatch AI",
-    "description": "Developed a full-stack AI platform that matches resumes to job postings using a multi-signal NLP pipeline (spaCy, Word2Vec, SBERT).",
+    "description": "Developed a full-stack AI platform that matches resumes to over 100,000 real-world job postings. Built using FastAPI and Next.js, the system employs a multi-signal NLP pipeline (spaCy, Word2Vec, SBERT) to analyze semantic alignment, extract specialized skills, and validate years-of-experience against job requirements. Optimized for production with Docker and deployed as a scalable microservice architecture.",
     "skills": [
       "FastAPI",
       "Python",
       "Next.js",
       "TypeScript",
+      "Tailwind CSS",
       "spaCy",
+      "NLTK",
+      "Word2Vec",
+      "Scikit-Learn",
       "Docker",
-      "Hugging Face"
+      "Hugging Face",
+      "Vercel"
     ],
     "achievements": [
-      "Custom NLP Pipeline: Built a line-by-line heuristic classifier to segment unstructured job descriptions.",
-      "Semantic Expansion: Implemented a Word2Vec model trained on 88k+ job posts.",
-      "Production Engineering: Reduced database footprint by 95% for free-tier deployment."
+      "Custom NLP Pipeline: Built a line-by-line heuristic classifier to segment unstructured job descriptions into responsibilities and requirements.",
+      "Semantic Expansion: Implemented a Word2Vec model trained on 88k+ job posts to bridge the terminology gap between candidates and recruiters.",
+      "Production Engineering: Reduced database footprint by 95% (378MB to 13MB) for free-tier deployment without sacrificing search accuracy.",
+      "Table-Aware Parsing: Integrated specialized DOCX parsing to accurately extract text from complex resume templates."
     ],
     "image": "/projects/Resume Matcher .jpg",
     "link": "https://nlp-resume-matcher-eta.vercel.app/",
     "github": "https://github.com/Oseleadeoye/nlp-resume-matcher"
   },
   {
-    "slug": "thyra-predict",
     "title": "Thyra Predict – Thyroid Disease Prediction System",
-    "description": "Developed and deployed a supervised ML model achieving 98.37% accuracy across 1,500+ clinical test cases.",
+    "description": "Developed and deployed a supervised ML model achieving 98.37% accuracy across 1,500+ clinical test cases. Engineered an end-to-end pipeline including preprocessing, feature engineering, model training, and evaluation. Optimized precision and recall across multi-class disease prediction, ensuring reliable diagnostic classification performance.",
     "skills": [
       "Python",
       "Machine Learning",
@@ -97,4 +88,4 @@
     "link": "https://thyrapredict-thyroid-prediction.onrender.com/",
     "github": "https://github.com/Oseleadeoye/thyrapredict-thyroid-prediction"
   }
-]
+]
