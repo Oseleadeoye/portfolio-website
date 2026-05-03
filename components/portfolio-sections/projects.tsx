@@ -22,7 +22,6 @@ interface Project {
 
 export function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(6)
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   const showMoreProjects = () => {
     setVisibleProjects((prev) => Math.min(prev + 3, projectsData.length))
@@ -50,9 +49,9 @@ export function Projects() {
               whileHover={{ y: -10 }}
             >
               <Card className="flex h-full flex-col overflow-hidden transition-all hover:shadow-xl">
-                <div 
+                <Link 
+                  href={`/projects/${project.slug}`}
                   className="relative h-48 w-full cursor-pointer overflow-hidden bg-slate-100 dark:bg-slate-900"
-                  onClick={() => setSelectedProject(project)}
                 >
                   <Image 
                     src={project.image || "/logo.png"} 
@@ -63,7 +62,7 @@ export function Projects() {
                   <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity hover:opacity-100">
                     <Button variant="secondary" size="sm">View Details</Button>
                   </div>
-                </div>
+                </Link>
                 <CardContent className="flex-1 p-6">
                   <h3 className="mb-2 text-xl font-semibold leading-tight">{project.title}</h3>
                   <p className="mb-4 line-clamp-3 text-sm text-muted-foreground">{project.description}</p>
@@ -94,8 +93,10 @@ export function Projects() {
                       </Button>
                     )}
                   </div>
-                  <Button variant="ghost" size="sm" className="h-8 text-xs" onClick={() => setSelectedProject(project)}>
-                    Details
+                  <Button asChild variant="ghost" size="sm" className="h-8 text-xs">
+                    <Link href={`/projects/${project.slug}`}>
+                      Details
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -113,91 +114,6 @@ export function Projects() {
         )}
       </div>
 
-      <AnimatePresence>
-        {selectedProject && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
-            onClick={() => setSelectedProject(null)}
-          >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-background p-0 shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="sticky top-0 z-10 flex items-center justify-between border-b bg-background/80 p-4 backdrop-blur-md">
-                <h3 className="text-xl font-bold">{selectedProject.title}</h3>
-                <Button variant="ghost" size="icon" onClick={() => setSelectedProject(null)}>
-                  <X className="h-5 w-5" />
-                </Button>
-              </div>
-              
-              <div className="p-6">
-                <div className="relative mb-6 h-64 w-full overflow-hidden rounded-xl bg-muted">
-                  <Image 
-                    src={selectedProject.image || "/logo.png"} 
-                    alt={selectedProject.title} 
-                    fill 
-                    className="object-contain p-4" 
-                  />
-                </div>
-                
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="mb-2 text-lg font-semibold">Description</h4>
-                    <p className="text-sm leading-relaxed text-muted-foreground">{selectedProject.description}</p>
-                  </div>
-                  
-                  {selectedProject.achievements && (
-                    <div>
-                      <h4 className="mb-3 text-lg font-semibold">Key Achievements</h4>
-                      <ul className="space-y-3">
-                        {selectedProject.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                            <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
-                            <span>{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  
-                  <div>
-                    <h4 className="mb-3 text-lg font-semibold">Technical Stack</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.skills.map((skill, i) => (
-                        <Badge key={i} variant="secondary">{skill}</Badge>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-4 pt-4">
-                    {selectedProject.link && (
-                      <Button asChild className="flex-1">
-                        <Link href={selectedProject.link} target="_blank">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
-                        </Link>
-                      </Button>
-                    )}
-                    {selectedProject.github && (
-                      <Button asChild variant="outline" className="flex-1">
-                        <Link href={selectedProject.github} target="_blank">
-                          <Github className="mr-2 h-4 w-4" />
-                          Source Code
-                        </Link>
-                      </Button>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
       </AnimatePresence>
     </section>
   )
