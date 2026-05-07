@@ -26,7 +26,7 @@ export function Hero() {
       <div className="max-w-3xl space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Osele Adeoye</h1>
         <p className="text-xl text-muted-foreground md:text-2xl font-medium">
-          AI & Machine Learning Engineer
+          Aspiring AI & Machine Learning Engineer
         </p>
         <p className="text-md text-primary font-medium tracking-wide">
           Generative AI • Computer Vision • NLP
