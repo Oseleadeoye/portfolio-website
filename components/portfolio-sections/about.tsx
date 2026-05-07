@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card"
-import { FileText, GraduationCap } from "lucide-react"
-import Image from "next/image"
+import { GraduationCap } from "lucide-react"
 
 export function About() {
   return (
@@ -13,7 +12,7 @@ export function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-12 text-center text-3xl font-bold tracking-tight text-white"
+          className="mb-12 text-center text-3xl font-bold tracking-tight"
         >
           About Me
         </motion.h2>
@@ -24,18 +23,18 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="mb-4 text-xl font-semibold text-white">Who I Am</h3>
+            <h3 className="mb-4 text-xl font-semibold">Who I Am</h3>
             <p className="mb-4 text-muted-foreground">
-              I'm an AI and Machine Learning student passionate about building intelligent systems that solve real-world problems. With hands-on experience in computer vision, NLP, and predictive analytics, I enjoy turning complex datasets into actionable insights and developing AI pipelines that actually work in production.
+              I'm an AI engineer currently building LLM and RAG-based solutions at Alberta Health Services, contributing to AI infrastructure that supports real-world clinical and operational use cases in a regulated enterprise environment.
             </p>
             <p className="mb-4 text-muted-foreground">
-              Whether I'm engineering computer vision models, building predictive systems that improve business efficiency, or teaching the next generation of coders, I'm driven by curiosity and the challenge of making technology work better.
+              My work spans the full AI stack, from training YOLO computer vision models for industrial defect detection, to designing multi-agent governance platforms with LLM-as-a-Judge pipelines, to building RAG-based chatbots with Pinecone and LangChain. I'm drawn to problems where AI can make a measurable difference and take pride in systems that are not just accurate, but safe, auditable, and production-ready.
             </p>
             <p className="mb-4 text-muted-foreground">
-              I believe in continuous learning and collaborating effectively to drive innovation. Currently completing my AI diploma at SAIT while gaining real-world experience through projects and leadership roles.
+              I care about responsible AI, applying governance, compliance, and data integrity practices that make AI trustworthy in high-stakes environments. Whether architecting a safety pipeline or optimizing a retrieval system, I build with the end user and the risk in mind.
             </p>
             <p className="text-muted-foreground">
-              When I'm not coding, you'll find me leading workshops as VP of SAIT's AI Club, playing chess, or watching NBA games.
+              Outside of work, you'll find me playing chess or watching NBA games.
             </p>
           </motion.div>
           <motion.div

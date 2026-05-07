@@ -1,37 +1,28 @@
 import { NextResponse } from "next/server"
-const nodemailer = require('nodemailer')
+import { Resend } from "resend"
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.NEXT_PUBLIC_EMAIL_USER,
-    pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
-  },
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { name, email, message } = body
 
-    // Validate the request data
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
     }
 
-    const mailOptions = {
-      from: email,
-      to: 'osamudiamennwoko@outlook.com',
-      subject: `Contact Form Submission from ${name}`,
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      replyTo: email,
+      to: "oseleadeoye@gmail.com",
+      subject: `Portfolio Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    };
+    })
 
-    // TODO: Implement rate limiting to prevent spam
-    await transporter.sendMail(mailOptions);
-    return NextResponse.json({ success: true, message: "Message sent successfully" }, { status: 200 })
+    return NextResponse.json({ success: true }, { status: 200 })
   } catch (error) {
-    console.error("Error processing contact form:", error)
-    return NextResponse.json({ error: "Failed to process your request" }, { status: 500 })
+    console.error("Error sending email:", error)
+    return NextResponse.json({ error: "Failed to send message" }, { status: 500 })
   }
 }
-

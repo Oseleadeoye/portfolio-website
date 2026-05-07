@@ -68,12 +68,11 @@ export function Projects() {
                   <h3 className="mb-2 text-xl font-semibold leading-tight">{project.title}</h3>
                   <p className="mb-4 line-clamp-3 text-sm text-muted-foreground">{project.description}</p>
                   <div className="mb-4 flex flex-wrap gap-2">
-                    {project.skills.slice(0, 4).map((skill, skillIndex) => (
+                    {project.skills.map((skill, skillIndex) => (
                       <Badge key={skillIndex} variant="secondary" className="text-[10px]">
                         {skill}
                       </Badge>
                     ))}
-                    {project.skills.length > 4 && <Badge variant="outline" className="text-[10px]">+{project.skills.length - 4}</Badge>}
                   </div>
                 </CardContent>
                 <CardFooter className={`flex gap-2 p-6 pt-0 ${project.link ? "justify-between" : "justify-end"}`}>

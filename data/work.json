@@ -1,25 +1,42 @@
 [
   {
+    "title": "IT Intern (Web & Collaboration)",
+    "company": "Alberta Health Services (AHS)",
+    "startDate": "May 2026",
+    "endDate": null,
+    "description": "Developing LLM and RAG-based solutions within a regulated healthcare environment, contributing to AI infrastructure that supports real-world clinical and operational use cases. Applying responsible AI practices to ensure solutions meet governance, compliance, and data integrity requirements. Collaborating with cross-functional IT teams to design and implement AI-powered tools addressing operational challenges at scale.",
+    "skills": [
+      "LLM",
+      "RAG",
+      "Python",
+      "Responsible AI",
+      "Healthcare IT",
+      "Enterprise AI"
+    ]
+  },
+  {
     "title": "AI Student (Work Integrated Learning Project)",
     "company": "Lemmer Spray Systems",
     "startDate": "Sep 2025",
-    "endDate": "Present",
-    "description": "Designing and training a computer vision segmentation model in Python (TensorFlow/OpenCV) to detect hairline cracks on metallic surfaces, targeting 80%+ classification accuracy and 85%+ F1-score. Engineering a deterministic preprocessing pipeline to eliminate metallic glare and environmental noise, improving model reliability in real-world industrial environments. Curating and annotating a 500+ image dataset, implementing Git-based CI/CD workflows, and supporting integration with an industrial IoT deployment platform for production testing.",
+    "endDate": "Apr 2026",
+    "description": "Designed and trained a YOLO segmentation model (PyTorch/OpenCV) to detect hairline cracks on metallic surfaces, achieving 85%+ F1-score on industrial test data. Built a full-stack ML platform (React 18/Vite + FastAPI) with real-time training monitoring via WebSockets, live camera inference, multi-model switching, and automatic session resumption. Engineered a preprocessing pipeline over an annotated dataset of 11,273 images for production model deployment.",
     "skills": [
       "Python",
-      "TensorFlow",
+      "PyTorch",
+      "YOLO",
       "OpenCV",
       "Computer Vision",
-      "CI/CD",
-      "IoT"
+      "FastAPI",
+      "React",
+      "CI/CD"
     ]
   },
   {
     "title": "Coding Instructor",
-    "company": "Code Ninja",
+    "company": "Code Ninjas",
     "startDate": "Nov 2024",
-    "endDate": "Present",
-    "description": "Teach programming fundamentals, logic, and debugging to 30+ students through hands-on game development projects. Design structured coding exercises that reinforce algorithms, computational thinking, and software development best practices. Mentor students in project-based environments, strengthening communication and technical leadership skills.",
+    "endDate": "May 2025",
+    "description": "Taught programming fundamentals, logic, and debugging to 30+ students through hands-on game development projects. Designed structured coding exercises that reinforce algorithms, computational thinking, and software development best practices. Mentored students in project-based environments, strengthening communication and technical leadership skills.",
     "skills": [
       "Teaching",
       "Game Development",
@@ -31,7 +48,7 @@
     "company": "Hasal Bank",
     "startDate": "Sep 2023",
     "endDate": "Apr 2024",
-    "description": "Analyzed complex financial datasets using SQL, Excel, and Power BI to uncover performance trends and support executive decision-making. Built automated Power BI dashboards for real-time KPI monitoring, reducing manual reporting workload and improving reporting efficiency by 20%. Improved data integrity across HR, Finance, and IT systems (including SAP integration), reducing reporting discrepancies by 15%.",
+    "description": "Analyzed complex financial datasets using SQL, Excel, and Power BI to uncover performance trends and support executive decision-making. Built automated Power BI dashboards for real-time KPI monitoring, reducing manual reporting workload and improving reporting efficiency by 20%. Improved data integrity across HR, Finance, and IT systems, reducing reporting discrepancies by 15%.",
     "skills": [
       "SQL",
       "Excel",
@@ -46,7 +63,7 @@
     "company": "Salpha Energy",
     "startDate": "May 2022",
     "endDate": "Aug 2022",
-    "description": "Developed predictive machine learning models in Python to forecast energy demand and customer behavior, enhancing operational planning accuracy. Built interactive dashboards in Power BI and Tableau to visualize KPIs and business metrics for leadership teams. Automated recurring reporting pipelines using Python and SQL, reducing manual processing time by 20% while increasing reporting reliability.",
+    "description": "Developed predictive machine learning models in Python to forecast energy demand and customer behavior, enhancing operational planning accuracy. Built interactive dashboards in Power BI and Tableau to visualize KPIs and business metrics for leadership teams. Automated recurring reporting pipelines using Python and SQL, reducing manual processing time by 20%.",
     "skills": [
       "Python",
       "Machine Learning",

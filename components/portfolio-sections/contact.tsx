@@ -38,22 +38,23 @@ export function Contact() {
     setIsSubmitting(true)
 
     try {
-      // Direct mailto configuration since the backend api is not set up
-      const subject = encodeURIComponent("New Portfolio Contact from " + formData.name);
-      const body = encodeURIComponent(formData.message + "\n\nReply to: (" + formData.email + ")");
-      const mailtoStr = `mailto:oseleadeoye@gmail.com?subject=${subject}&body=${body}`;
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
 
-      window.location.href = mailtoStr;
+      if (!res.ok) throw new Error("Server error")
 
       setFormData({ name: "", email: "", message: "" })
       toast({
-        title: "Message action triggered!",
-        description: "Your default email client should open to send the message.",
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
       })
     } catch (error) {
       toast({
-        title: "Error!",
-        description: 'Failed to connect to the server',
+        title: "Failed to send",
+        description: "Something went wrong. Please try again or email me directly.",
       })
     }
 
@@ -67,7 +68,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-12 text-center text-3xl font-bold tracking-tight text-white"
+          className="mb-12 text-center text-3xl font-bold tracking-tight"
         >
           Contact Me
         </motion.h2>

@@ -33,6 +33,12 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Logo />
         <nav className="hidden md:flex md:items-center md:gap-6">
+          <button className="text-sm font-medium hover:text-primary" onClick={() => scrollToSection("about")}>
+            About
+          </button>
+          <button className="text-sm font-medium hover:text-primary" onClick={() => scrollToSection("skills")}>
+            Skills
+          </button>
           <button className="text-sm font-medium hover:text-primary" onClick={() => scrollToSection("experience")}>
             Experience
           </button>
@@ -70,6 +76,18 @@ export function Navbar() {
               </Button>
             </div>
             <nav className="container flex flex-col items-center gap-6 px-4 py-8 bg-background/75">
+              <button
+                className="text-lg font-medium"
+                onClick={() => { scrollToSection("about"); closeMenu() }}
+              >
+                About
+              </button>
+              <button
+                className="text-lg font-medium"
+                onClick={() => { scrollToSection("skills"); closeMenu() }}
+              >
+                Skills
+              </button>
               <button
                 className="text-lg font-medium"
                 onClick={() => {

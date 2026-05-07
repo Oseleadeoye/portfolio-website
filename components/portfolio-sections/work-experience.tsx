@@ -65,12 +65,11 @@ export function WorkExperience() {
                   <p className="mb-4 text-sm text-muted-foreground">{job.company}</p>
                   <p className="mb-4 text-sm">{job.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {job.skills.slice(0, 4).map((skill, skillIndex) => (
+                    {job.skills.map((skill, skillIndex) => (
                       <Badge key={skillIndex} variant="secondary">
                         {skill}
                       </Badge>
                     ))}
-                    {job.skills.length > 4 && <Badge variant="outline">+{job.skills.length - 4}</Badge>}
                   </div>
                 </CardContent>
               </Card>

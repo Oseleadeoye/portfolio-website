@@ -1,6 +1,6 @@
 [
   {
-    "title": "AI Health Check – AI Operations & Governance Platform",
+    "title": "AI Health Check: AI Operations & Governance Platform",
     "description": "A comprehensive full-stack AI Operations platform unifying service health monitoring, LLM-powered incident triage, model drift detection, and compliance reporting. Architected with a multi-layer safety pipeline and Human-in-the-Loop governance, it ensures secure, cost-effective, and auditable enterprise AI orchestration.",
     "skills": [
       "React 18",
@@ -23,31 +23,29 @@
     "github": "https://github.com/Oseleadeoye/ai_health_check"
   },
   {
-    "title": "SonicClusters — Music Clustering & Recommendation System",
-    "description": "An interactive web application demonstrating unsupervised music clustering and content-based recommendation. Powered by a 12,000-song dataset combining the Million Song Dataset with modern Spotify tracks, it features automated musical mood labeling, UMAP-based spatial grouping, and real-time similarity search.",
+    "title": "MedChat - Medical Chatbot with LLMs & RAG",
+    "description": "A RAG-based medical Q&A chatbot that grounds LLM responses in a curated medical knowledge base. Built with LangChain and Pinecone for semantic retrieval, it uses Groq-hosted Llama 3.3 70B for fast inference, HuggingFace sentence-transformer embeddings for vector search, and a history-aware retriever to maintain multi-turn conversation context. Containerized with Docker and served via a Flask REST API.",
     "skills": [
-      "React 18",
-      "TypeScript",
-      "FastAPI",
       "Python",
-      "scikit-learn",
-      "UMAP",
-      "Pandas",
-      "NumPy",
-      "Spotify Web API",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Recharts"
+      "Flask",
+      "LangChain",
+      "Pinecone",
+      "Groq",
+      "Llama 3.3 70B",
+      "HuggingFace",
+      "Docker",
+      "RAG",
+      "REST API"
     ],
     "achievements": [
-      "Musical Mood Labeling: Developed an automated system to name clusters based on audio profiles (e.g., 'Intense Upbeat Pop', 'Mellow Slow Jazz') using multi-feature analysis.",
-      "UMAP Visualization: Implemented high-performance 2D/3D scatter plots for mathematically accurate spatial grouping of 12,000 songs.",
-      "Real-Time Inference: Built a FastAPI backend that calculates Euclidean distances on-the-fly to provide instant song recommendations within clusters.",
-      "Spotify Integration: Leveraged Spotify's Web API to enrich the dataset with real album artwork, audio previews, and metadata."
+      "RAG Pipeline: Built an end-to-end retrieval pipeline loading a medical PDF knowledge base, chunking into 500-token segments, embedding with all-MiniLM-L6-v2, and storing 384-dimension vectors in a Pinecone serverless index.",
+      "History-Aware Retrieval: Implemented context-aware question reformulation using LangChain's history-aware retriever, resolving ambiguous follow-up questions against prior chat history before retrieval.",
+      "Groq Inference: Integrated Groq's API serving Llama 3.3 70B for fast, scalable LLM inference without managing model infrastructure.",
+      "Containerized Deployment: Packaged the full application with Docker and deployed to a cloud environment, exposing a clean Flask REST API."
     ],
-    "image": "/projects/Sonic Clusters .jpg",
-    "link": "https://sonic-clusters.vercel.app/",
-    "github": "https://github.com/Oseleadeoye/sonic-clusters-"
+    "image": "/projects/Medical Chatbot .jpg",
+    "link": "https://medical-chatbot.fly.dev",
+    "github": "https://github.com/Oseleadeoye/Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask"
   },
   {
     "title": "ResumeMatch AI",
@@ -77,12 +75,18 @@
     "github": "https://github.com/Oseleadeoye/nlp-resume-matcher"
   },
   {
-    "title": "Thyra Predict – Thyroid Disease Prediction System",
+    "title": "Thyra Predict: Thyroid Disease Prediction System",
     "description": "Developed and deployed a supervised ML model achieving 98.37% accuracy across 1,500+ clinical test cases. Engineered an end-to-end pipeline including preprocessing, feature engineering, model training, and evaluation. Optimized precision and recall across multi-class disease prediction, ensuring reliable diagnostic classification performance.",
     "skills": [
       "Python",
       "Machine Learning",
       "Scikit-learn"
+    ],
+    "achievements": [
+      "98.37% Accuracy: Achieved 98.37% classification accuracy across 1,500+ clinical test cases on a multi-class thyroid disease dataset.",
+      "End-to-End Pipeline: Engineered a full ML pipeline covering data preprocessing, feature engineering, model training, and evaluation with no manual intervention between stages.",
+      "Multi-Class Optimization: Tuned precision and recall across multiple disease classes to ensure reliable diagnostic performance, not just overall accuracy.",
+      "Production Deployment: Deployed the trained model as a web application on Render, making predictions accessible via a live interface."
     ],
     "image": "/projects/Thyroid Health .png",
     "link": "https://thyrapredict-thyroid-prediction.onrender.com/",

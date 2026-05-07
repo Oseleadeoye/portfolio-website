@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SiC, SiGithub, SiJavascript, SiMysql, SiPython, SiReact, SiNextdotjs, SiR, SiTableau, SiGoogleanalytics, SiAmazonwebservices } from "react-icons/si";
-import { FaJava, FaBrain, FaEye, FaLanguage } from "react-icons/fa";
+import { SiC, SiDocker, SiFlask, SiGithub, SiJavascript, SiMysql, SiPython, SiPytorch, SiReact, SiNextdotjs, SiR, SiTableau, SiGoogleanalytics, SiAmazonwebservices, SiTypescript, SiHuggingface } from "react-icons/si";
+import { FaJava, FaBrain, FaCloud, FaEye, FaLanguage, FaLink, FaPlug } from "react-icons/fa";
 import { BiTable, BiScan } from "react-icons/bi";
 
 const technologies = [
@@ -13,6 +13,14 @@ const technologies = [
   { name: "Java", icon: <FaJava className="w-10 h-10 text-red-500" /> },
   { name: "C / C#", icon: <SiC className="w-10 h-10 text-blue-600" /> },
   { name: "JavaScript", icon: <SiJavascript className="w-10 h-10 text-yellow-500" /> },
+  { name: "Flask", icon: <SiFlask className="w-10 h-10 text-gray-700 dark:text-gray-300" /> },
+  { name: "LangChain", icon: <FaLink className="w-10 h-10 text-emerald-500" /> },
+  { name: "PyTorch", icon: <SiPytorch className="w-10 h-10 text-orange-600" /> },
+  { name: "Docker", icon: <SiDocker className="w-10 h-10 text-blue-500" /> },
+  { name: "Hugging Face", icon: <SiHuggingface className="w-10 h-10 text-yellow-500" /> },
+  { name: "TypeScript", icon: <SiTypescript className="w-10 h-10 text-blue-600" /> },
+  { name: "Azure", icon: <FaCloud className="w-10 h-10 text-blue-500" /> },
+  { name: "WebSockets", icon: <FaPlug className="w-10 h-10 text-purple-500" /> },
   { name: "Machine Learning", icon: <FaBrain className="w-10 h-10 text-orange-500" /> },
   { name: "Computer Vision", icon: <FaEye className="w-10 h-10 text-green-500" /> },
   { name: "NLP", icon: <FaLanguage className="w-10 h-10 text-blue-500" /> },
@@ -33,7 +41,7 @@ export function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-12 text-center text-3xl font-bold tracking-tight text-white"
+          className="mb-12 text-center text-3xl font-bold tracking-tight"
         >
           Skills
         </motion.h2>

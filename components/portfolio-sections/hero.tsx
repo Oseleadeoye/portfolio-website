@@ -1,8 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Github, Linkedin } from "lucide-react"
-import { ScrollLink } from "../scroll-link"
+import { ChevronDown, Download, Github, Linkedin } from "lucide-react"
 import Image from "next/image"
 
 export function Hero() {
@@ -27,10 +26,10 @@ export function Hero() {
       <div className="max-w-3xl space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Osele Adeoye</h1>
         <p className="text-xl text-muted-foreground md:text-2xl font-medium">
-          AI & Machine Learning Student
+          AI & Machine Learning Engineer
         </p>
         <p className="text-md text-primary font-medium tracking-wide">
-          Computer Vision • NLP • Predictive Analytics
+          Generative AI • Computer Vision • NLP
         </p>
         <p className="text-muted-foreground max-w-[600px] mx-auto text-lg leading-relaxed">
           Building intelligent systems that solve real-world problems.
@@ -41,6 +40,12 @@ export function Hero() {
           </Button>
           <Button asChild variant="outline" size="lg">
             <button onClick={() => scrollToSection("projects")}>View Projects</button>
+          </Button>
+          <Button asChild variant="secondary" size="lg">
+            <a href="/resume.pdf" download>
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </a>
           </Button>
         </div>
       </div>
